@@ -1,0 +1,151 @@
+Training V5-TEMPORAL on CUDA at 1024x1024
+Input channels: 3 (current + previous diff + next diff)
+Negative loss weight: 10.0
+train: 8000 frames (1024x1024)
+val: 800 frames (1024x1024)
+Model parameters: 980,389 (0.980M)
+--------------------------------------------------------------------------------
+  Epoch 1 Batch 250/8000 Loss=1.1981 Speed=4.21/s
+  Epoch 1 Batch 500/8000 Loss=1.3412 Speed=4.24/s
+  Epoch 1 Batch 750/8000 Loss=1.3782 Speed=4.25/s
+  Epoch 1 Batch 1000/8000 Loss=1.2664 Speed=4.25/s
+  Epoch 1 Batch 1250/8000 Loss=1.1923 Speed=4.26/s
+  Epoch 1 Batch 1500/8000 Loss=1.9543 Speed=4.26/s
+  Epoch 1 Batch 1750/8000 Loss=1.1675 Speed=4.25/s
+  Epoch 1 Batch 2000/8000 Loss=0.9076 Speed=4.25/s
+  Epoch 1 Batch 2250/8000 Loss=1.1907 Speed=4.24/s
+  Epoch 1 Batch 2500/8000 Loss=1.2407 Speed=4.23/s
+  Epoch 1 Batch 2750/8000 Loss=1.3966 Speed=4.23/s
+  Epoch 1 Batch 3000/8000 Loss=1.5492 Speed=4.23/s
+  Epoch 1 Batch 3250/8000 Loss=1.1946 Speed=4.23/s
+  Epoch 1 Batch 3500/8000 Loss=1.3330 Speed=4.22/s
+  Epoch 1 Batch 3750/8000 Loss=1.3621 Speed=4.22/s
+  Epoch 1 Batch 4000/8000 Loss=1.0840 Speed=4.22/s
+  Epoch 1 Batch 4250/8000 Loss=1.1468 Speed=4.22/s
+  Epoch 1 Batch 4500/8000 Loss=0.3156 Speed=4.23/s
+  Epoch 1 Batch 4750/8000 Loss=1.0173 Speed=4.23/s
+  Epoch 1 Batch 5000/8000 Loss=1.4112 Speed=4.23/s
+  Epoch 1 Batch 5250/8000 Loss=1.2452 Speed=4.22/s
+  Epoch 1 Batch 5500/8000 Loss=1.1354 Speed=4.22/s
+  Epoch 1 Batch 5750/8000 Loss=1.0138 Speed=4.21/s
+  Epoch 1 Batch 6000/8000 Loss=1.4637 Speed=4.21/s
+  Epoch 1 Batch 6250/8000 Loss=1.4522 Speed=4.20/s
+  Epoch 1 Batch 6500/8000 Loss=1.5486 Speed=4.21/s
+  Epoch 1 Batch 6750/8000 Loss=1.6186 Speed=4.21/s
+  Epoch 1 Batch 7000/8000 Loss=1.4585 Speed=4.21/s
+  Epoch 1 Batch 7250/8000 Loss=1.1077 Speed=4.21/s
+  Epoch 1 Batch 7500/8000 Loss=1.2297 Speed=4.21/s
+  Epoch 1 Batch 7750/8000 Loss=1.7046 Speed=4.21/s
+  Epoch 1 Batch 8000/8000 Loss=1.4121 Speed=4.21/s
+
+================================================================================
+Epoch 1/5
+================================================================================
+Train Loss : 1.322032
+Val Loss   : 1.229411
+TP         : 398
+FP         : 8949
+FN         : 1604
+Precision  : 0.042581
+Recall     : 0.198801
+F1         : 0.070138
+Time       : 2043.2s
+LR         : 3.00e-04
+-> Saved best temporal model
+
+  Epoch 2 Batch 250/8000 Loss=1.7462 Speed=4.30/s
+  Epoch 2 Batch 500/8000 Loss=1.0292 Speed=4.28/s
+  Epoch 2 Batch 750/8000 Loss=1.5640 Speed=4.29/s
+  Epoch 2 Batch 1000/8000 Loss=1.2258 Speed=4.30/s
+  Epoch 2 Batch 1250/8000 Loss=1.1518 Speed=4.30/s
+  Epoch 2 Batch 1500/8000 Loss=1.0697 Speed=4.30/s
+  Epoch 2 Batch 1750/8000 Loss=1.5100 Speed=4.31/s
+  Epoch 2 Batch 2000/8000 Loss=1.6547 Speed=4.31/s
+  Epoch 2 Batch 2250/8000 Loss=1.5100 Speed=4.31/s
+  Epoch 2 Batch 2500/8000 Loss=1.8731 Speed=4.31/s
+  Epoch 2 Batch 2750/8000 Loss=1.1860 Speed=4.31/s
+  Epoch 2 Batch 3000/8000 Loss=0.9068 Speed=4.31/s
+  Epoch 2 Batch 3250/8000 Loss=1.1018 Speed=4.31/s
+  Epoch 2 Batch 3500/8000 Loss=1.9333 Speed=4.30/s
+  Epoch 2 Batch 3750/8000 Loss=1.0029 Speed=4.30/s
+  Epoch 2 Batch 4000/8000 Loss=1.0618 Speed=4.30/s
+  Epoch 2 Batch 4250/8000 Loss=1.5366 Speed=4.30/s
+  Epoch 2 Batch 4500/8000 Loss=1.2123 Speed=4.30/s
+  Epoch 2 Batch 4750/8000 Loss=1.5506 Speed=4.30/s
+  Epoch 2 Batch 5000/8000 Loss=1.1544 Speed=4.30/s
+  Epoch 2 Batch 5250/8000 Loss=1.8206 Speed=4.31/s
+  Epoch 2 Batch 5500/8000 Loss=1.2752 Speed=4.31/s
+  Epoch 2 Batch 5750/8000 Loss=1.1159 Speed=4.31/s
+  Epoch 2 Batch 6000/8000 Loss=1.4382 Speed=4.31/s
+  Epoch 2 Batch 6250/8000 Loss=1.3576 Speed=4.31/s
+  Epoch 2 Batch 6500/8000 Loss=1.0173 Speed=4.31/s
+  Epoch 2 Batch 6750/8000 Loss=1.5808 Speed=4.31/s
+  Epoch 2 Batch 7000/8000 Loss=1.7776 Speed=4.31/s
+  Epoch 2 Batch 7250/8000 Loss=1.1521 Speed=4.31/s
+  Epoch 2 Batch 7500/8000 Loss=1.2949 Speed=4.32/s
+  Epoch 2 Batch 7750/8000 Loss=1.3924 Speed=4.32/s
+  Epoch 2 Batch 8000/8000 Loss=1.5263 Speed=4.32/s
+
+================================================================================
+Epoch 2/5
+================================================================================
+Train Loss : 1.255696
+Val Loss   : 1.164089
+TP         : 397
+FP         : 6734
+FN         : 1605
+Precision  : 0.055672
+Recall     : 0.198302
+F1         : 0.086937
+Time       : 1993.1s
+LR         : 3.00e-04
+-> Saved best temporal model
+
+  Epoch 3 Batch 250/8000 Loss=1.0916 Speed=4.35/s
+  Epoch 3 Batch 500/8000 Loss=0.8628 Speed=4.36/s
+  Epoch 3 Batch 750/8000 Loss=1.4427 Speed=4.36/s
+  Epoch 3 Batch 1000/8000 Loss=1.0280 Speed=4.36/s
+  Epoch 3 Batch 1250/8000 Loss=1.0535 Speed=4.36/s
+  Epoch 3 Batch 1500/8000 Loss=1.6670 Speed=4.35/s
+  Epoch 3 Batch 1750/8000 Loss=1.2495 Speed=4.35/s
+  Epoch 3 Batch 2000/8000 Loss=1.0599 Speed=4.35/s
+  Epoch 3 Batch 2250/8000 Loss=1.2604 Speed=4.35/s
+  Epoch 3 Batch 2500/8000 Loss=1.0796 Speed=4.35/s
+  Epoch 3 Batch 2750/8000 Loss=1.1000 Speed=4.35/s
+  Epoch 3 Batch 3000/8000 Loss=1.2073 Speed=4.35/s
+  Epoch 3 Batch 3250/8000 Loss=1.2292 Speed=4.35/s
+  Epoch 3 Batch 3500/8000 Loss=0.8577 Speed=4.35/s
+  Epoch 3 Batch 3750/8000 Loss=1.3138 Speed=4.35/s
+  Epoch 3 Batch 4000/8000 Loss=0.9758 Speed=4.35/s
+  Epoch 3 Batch 4250/8000 Loss=1.5174 Speed=4.35/s
+  Epoch 3 Batch 4500/8000 Loss=1.1622 Speed=4.35/s
+  Epoch 3 Batch 4750/8000 Loss=1.3537 Speed=4.35/s
+  Epoch 3 Batch 5000/8000 Loss=1.0265 Speed=4.35/s
+  Epoch 3 Batch 5250/8000 Loss=1.5947 Speed=4.35/s
+  Epoch 3 Batch 5500/8000 Loss=1.2042 Speed=4.35/s
+  Epoch 3 Batch 5750/8000 Loss=1.5234 Speed=4.35/s
+  Epoch 3 Batch 6000/8000 Loss=1.0714 Speed=4.35/s
+  Epoch 3 Batch 6250/8000 Loss=1.2377 Speed=4.35/s
+  Epoch 3 Batch 6500/8000 Loss=1.2140 Speed=4.35/s
+  Epoch 3 Batch 6750/8000 Loss=1.3425 Speed=4.35/s
+  Epoch 3 Batch 7000/8000 Loss=1.2493 Speed=4.35/s
+  Epoch 3 Batch 7250/8000 Loss=1.1389 Speed=4.35/s
+  Epoch 3 Batch 7500/8000 Loss=1.2686 Speed=4.35/s
+  Epoch 3 Batch 7750/8000 Loss=1.0545 Speed=4.35/s
+  Epoch 3 Batch 8000/8000 Loss=1.1143 Speed=4.35/s
+
+================================================================================
+Epoch 3/5
+================================================================================
+Train Loss : 1.225981
+Val Loss   : 1.155204
+TP         : 395
+FP         : 6700
+FN         : 1607
+Precision  : 0.055673
+Recall     : 0.197303
+F1         : 0.086842
+Time       : 1979.5s
+LR         : 3.00e-04
+
+  Epoch 4 Batch 250/8000 Loss=0.7956 Speed=4.36/s

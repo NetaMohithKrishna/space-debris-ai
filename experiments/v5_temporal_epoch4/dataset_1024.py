@@ -106,7 +106,7 @@ class SpaceDebrisHeatmap1024Dataset(Dataset):
 
             # Small Gaussian for tiny debris.
             sigma = max(
-                0.75,
+                2.0,
                 max(bw, bh)
                 / (2.0 * self.output_stride)
             )

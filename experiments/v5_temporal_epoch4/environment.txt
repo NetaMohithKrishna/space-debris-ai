@@ -1,0 +1,4 @@
+Python 3.13.14
+PyTorch: 2.6.0+cu124
+CUDA: 12.4
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU

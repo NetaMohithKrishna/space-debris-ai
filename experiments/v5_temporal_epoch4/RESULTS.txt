@@ -1,0 +1,73 @@
+V5-TEMPORAL EXPERIMENT
+======================
+
+Best checkpoint:
+heatmap_detector_v5_temporal_best.pth
+
+Architecture:
+HeatmapDetectorV5Temporal
+Parameters:
+980,389 (~0.98M)
+
+Input:
+3 channels
+0 = current frame
+1 = abs(current - previous)
+2 = abs(next - current)
+
+Dataset:
+data/v4
+Train = 8000 frames
+Validation = 800 frames
+
+Epoch 4:
+Train Loss : 1.207069
+Val Loss   : 1.150535
+TP         : 352
+FP         : 1140
+FN         : 1650
+Precision  : 0.235925
+Recall     : 0.175824
+F1         : 0.201488
+
+Best threshold sweep:
+Threshold  : 0.60
+TP         : 318
+FP         : 147
+FN         : 1684
+Precision  : 0.6839
+Recall     : 0.1588
+F1         : 0.2578
+
+Physical diagnostic:
+Total objects = 2002
+
+By physical size, >0.60 response:
+1 cm  = 0.24%
+2 cm  = 0.00%
+5 cm  = 11.69%
+10 cm = 51.29%
+
+By apparent size, >0.60 response:
+1-2 px   = 0%
+2-4 px   = 0%
+4-10 px  = 0%
+>=10 px  = 50.24%
+
+Nearby response:
+>0.20 = 100.00%
+>0.30 = 99.00%
+>0.50 = 17.68%
+
+Key conclusion:
+The model responds near most GT objects, but high-confidence
+responses are strongly concentrated on larger objects.
+Tiny-object learning / heatmap target representation is the
+next major optimization target.
+
+Potential next experiment:
+Reduce minimum heatmap sigma from 2.0 output pixels to ~0.75
+output pixels, then perform a 5-sample overfit test before
+full training.
+
+DO NOT modify the current best checkpoint.

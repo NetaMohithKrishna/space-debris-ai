@@ -9,13 +9,13 @@ DEVICE = torch.device("cuda")
 STRIDE = 4
 
 # Detection settings
-THRESHOLD = 0.50
-NMS_RADIUS = 5          # output pixels
+THRESHOLD = 0.60
+NMS_RADIUS = 1          # output pixels
 MATCH_RADIUS = 5        # output pixels
 
 
 def get_peaks(heatmap, threshold):
-    local_max = maximum_filter(heatmap, size=5) == heatmap
+    local_max = maximum_filter(heatmap, size=3) == heatmap
     coords = np.argwhere(
         (heatmap >= threshold) & local_max
     )

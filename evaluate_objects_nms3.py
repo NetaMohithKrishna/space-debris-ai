@@ -9,8 +9,8 @@ DEVICE = torch.device("cuda")
 STRIDE = 4
 
 # Detection settings
-THRESHOLD = 0.50
-NMS_RADIUS = 5          # output pixels
+THRESHOLD = 0.60
+NMS_RADIUS = 3          # output pixels
 MATCH_RADIUS = 5        # output pixels
 
 

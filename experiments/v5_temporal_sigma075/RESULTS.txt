@@ -1,0 +1,58 @@
+V5-TEMPORAL SIGMA 0.75 EXPERIMENT
+
+Architecture:
+HeatmapDetectorV5Temporal
+Parameters: 980,389
+
+Input:
+3 channels:
+I(t)
+|I(t)-I(t-1)|
+|I(t+1)-I(t)|
+
+Dataset:
+8000 train frames
+800 validation frames
+1024x1024
+batch size = 1
+
+Heatmap target:
+minimum sigma = 0.75 output pixels
+
+Epoch 1:
+Train Loss : 1.322032
+Val Loss   : 1.229411
+TP         : 398
+FP         : 8949
+FN         : 1604
+Precision  : 0.042581
+Recall     : 0.198801
+F1         : 0.070138
+
+Epoch 3:
+Train Loss : 1.225981
+Val Loss   : 1.155204
+TP         : 395
+FP         : 6700
+FN         : 1607
+Precision  : 0.055673
+Recall     : 0.197303
+F1         : 0.086842
+
+Training reached:
+Epoch 4 Batch 250/8000
+
+Laptop subsequently froze/restarted.
+
+Previous baseline:
+V5-Temporal sigma 2.0
+Best threshold = 0.60
+Precision = 0.6839
+Recall = 0.1588
+F1 = 0.2578
+
+Conclusion so far:
+Sigma 0.75 increased recall slightly at threshold 0.50,
+but produced substantially more false positives.
+A proper threshold sweep is required before final comparison.
+Do not delete the sigma 0.75 checkpoint.
